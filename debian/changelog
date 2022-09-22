@@ -1,0 +1,102 @@
+shine (3.1.1-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/copyright: Use https protocol in Format field
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/changelog: Remove trailing whitespaces
+  * d/control: Remove trailing whitespaces
+
+  [ Felipe Sateler ]
+  * Change maintainer address to debian-multimedia@lists.debian.org
+
+  [ Sebastian Ramacher ]
+  * debian/control: Bump Standards-Version.
+  * debian/: Bump debhelper compat level to 11.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Thu, 19 Apr 2018 20:25:13 +0200
+
+shine (3.1.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control: Bump Standards-Version.
+  * debian/rules: Drop obsolete dh_strip override.
+  * debian/source/lintian-overrides: Remove unused override.
+  * debian/copyright: Drop unused paragraph.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sun, 06 Aug 2017 14:15:48 +0200
+
+shine (3.1.0-5) unstable; urgency=medium
+
+  * debian/control: Bump Standards-Version.
+  * debian/{rules,control,compat}: Bump to compat 10.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Thu, 24 Nov 2016 00:21:57 +0100
+
+shine (3.1.0-4) unstable; urgency=medium
+
+  * debian/changelog: Fix typo in entry for 3.1.0-3.
+  * debian/source/lintian-overrides: Update overrides.
+  * debian/control: Update Vcs-Git.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Fri, 29 Jan 2016 20:55:57 +0100
+
+shine (3.1.0-3) unstable; urgency=medium
+
+  * debian/control:
+    - Bump Standards-Version.
+    - Adopt package and move it under the Multimedia Team umbrella. Thanks for
+      maintaining it, Romain Beauxis. (Closes: #810995)
+    - Removed Pre-Depends, no longer needed.
+    - Move shineenc to section sound.
+  * debian/copyright: Update copyright information.
+  * debian/rules: Use DEB_CFLAGS_MAINT_APPEND.
+  * Migrate to automatic debug packages.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sat, 16 Jan 2016 17:29:21 +0100
+
+shine (3.1.0-2.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * only pass -mips32r2 to CFLAGS on mips and mipsel (Closes: #761935).
+
+ -- YunQiang Su <syq@debian.org>  Fri, 10 Oct 2014 12:53:42 +0800
+
+shine (3.1.0-2) unstable; urgency=medium
+
+  * Fix build on mips architectures.
+
+ -- Romain Beauxis <toots@rastageeks.org>  Mon, 11 Aug 2014 18:38:02 -0500
+
+shine (3.1.0-1) unstable; urgency=medium
+
+  * New upstream release with new ABI.
+  * Bumped library's binary package to libshine3
+  * Call autoreconf at build time to keep
+    build files up-to date.
+  * Bumped standards-version to 3.9.5
+
+ -- Romain Beauxis <toots@rastageeks.org>  Tue, 29 Jul 2014 23:38:40 -0500
+
+shine (2.0.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Library soversion bumped to 2:0:0,
+    package renamed accordingly.
+  * Drop autoconf from debian/rules.
+  * Bumped standards version to 3.9.4
+  * First upload to unstable.
+
+ -- Romain Beauxis <toots@rastageeks.org>  Wed, 10 Apr 2013 22:41:43 -0500
+
+shine (1.0.0-2) experimental; urgency=low
+
+  * Fixed debian/copyright
+
+ -- Romain Beauxis <toots@rastageeks.org>  Mon, 04 Feb 2013 17:39:04 -0600
+
+shine (1.0.0-1) experimental; urgency=low
+
+  * Initial upload.
+  Closes: #699634
+
+ -- Romain Beauxis <toots@rastageeks.org>  Sat, 02 Feb 2013 13:40:59 -0600

@@ -1,0 +1,26 @@
+.TH shineenc 1 "Feb 2, 2013" "SHINEENC" "SHINEENC audio compressor"
+.SH NAME
+shineenc \- create mp3 audio files
+.SH SYNOPSIS
+shineenc [options] <infile> <outfile>
+.SH DESCRIPTION
+.PP
+shineenc is a program which can be used to create compressed audio files.
+These audio files can be played back by popular MP3 players such as
+mpg123 or madplay.
+To read from stdin, use "\-" for <infile>.
+To write to stdout, use "\-" for <outfile>.
+.SH OPTIONS
+.TP
+.B \-q
+Do not print anything on the screen.
+.TP
+.B \-v
+Verbose mode.
+.TP
+.B \-b <bitrate>
+Specifies the minimum bitrate to be used.
+.TP
+.B \-c
+Mark the encoded file as being copyrighted.
+

@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/architecture.mk
+
+ifneq (,$(filter mips mipsel,$(DEB_HOST_ARCH)))
+export DEB_CFLAGS_MAINT_APPEND=-mips32r2
+endif
+
+%:
+	dh $@
